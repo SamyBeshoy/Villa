@@ -1,0 +1,23 @@
+// import global file
+@use "global" as *; 
+
+// import variables file
+@use "variables" as *; 
+
+// import header file
+@use "header" as *;
+
+// import landing file
+@use "landing" as *;
+
+// import propertyd file
+@use "propertyd" as *;
+
+// import properties file
+@use "properties" as *;
+
+// import contact file
+@use "contact" as *;
+
+// import footer file
+@use "footer" as *;

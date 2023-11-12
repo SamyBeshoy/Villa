@@ -1,0 +1,53 @@
+// import variables file
+@use "variables" as *; 
+/*start properties*/
+#Properties_con {
+    padding: $sec_padding;
+    .top {
+        text-align: center;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .card {
+            background-color: #f4f4f4;
+            padding: 2em;
+            border-radius: 15px;
+            margin: 1em 0.5em;
+            width: 20em;
+            img {
+                width: 20em;
+            }
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                    background-color: $third_color;
+                    border-radius: 5px;
+                    padding: 5px 12px;
+                }
+                span {
+                    color: $main_color;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                }
+            }
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;
+                    margin: 5px 10px 5px 0px; 
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+/*end properties*/

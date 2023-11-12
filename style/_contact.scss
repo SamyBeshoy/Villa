@@ -1,0 +1,103 @@
+// import variables file
+@use "variables" as *; 
+/*start contact*/
+#contact {
+    background-image: url("../imgs/contact-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: $sec_padding;
+    width: 100%;
+    min-height: fit-content;
+    .top {
+        text-align: center;
+        h2 {
+            color: white;
+        }
+    }
+    .style{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .info {
+            width: 32em;
+            iframe {
+                width: 32em;
+                border-radius: 10px;
+            }
+            .boxs {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1em;
+                .box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: white;
+                    border-radius: 10px;
+                    width: 14em;
+                    padding: 0.5em 0.8em;
+                    .material-symbols-outlined {
+                        color: $main_color;
+                        margin-right: 20px;
+                    }
+                    div {
+                        span {
+                            margin: 5px;
+                            font-weight: bold;
+                            font-size: 1em;
+                        }
+                        p {
+                            margin: 5px;
+                            font-size: calc(1em - 0.5px);
+                        }
+                    }
+                }
+            }
+        }
+        .con_card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            padding: 2em;
+            border-radius: 10px;
+            div {
+                margin: 1em 0;
+            }
+            input {
+                border-radius: 20px;
+                background-color: #f6f6f6;
+                border: none;
+                padding: 1em;
+                margin-bottom: 2em;
+            }
+            .m {
+                height: 6.25em;
+                width: 15em;
+                display: flex;
+            }
+            .s {
+                width: 30%;
+                background-color: black;
+                color: white;
+                padding: 0.5em 1em;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .s:hover {
+                background-color: $main_color;
+            }
+        }
+    }
+}
+@media (max-width: 950px) {
+    .style {
+        flex-direction: column !important;
+        align-items: center ;
+    }
+    .con_card {
+        margin-top: 2em;
+    }
+}
+/*end contact*/

@@ -1,0 +1,80 @@
+// import variables file
+@use "variables" as *; 
+/*start header*/
+.sub_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+    .details {
+        .box {
+            display: flex;
+            align-items: center;
+            svg {
+                fill: $main_color;
+                margin-right: 10px;
+                font-size: 1.1em;
+            }
+            span {
+                font-size: 1em;
+            }
+        }
+    }
+    .links {
+        font-size: 1.1em;
+        svg {
+            margin: 0 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        svg:hover {
+            fill: $main_color;
+        }
+    }
+}
+.hr_h{
+    background-color: rgb(213, 216, 216);
+    height: 1px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+    .logo {
+        a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+    }
+    .nav {
+        span {
+            a {
+                text-decoration: none;
+                color: black;
+                margin: 0 15px;
+                font-size: 1.1em;
+            }
+        }
+        .act {
+            color: $main_color;
+        }
+    }
+}
+/*end header*/

@@ -1,0 +1,228 @@
+// import variables file
+@use "variables" as *; 
+/*start propertyd*/
+#PropertyD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $sec_padding;
+    .img {
+        img {
+            height: 25em;
+        }
+    }
+    .text_c {
+        text-align: center;
+        p {
+            background-color: #f3f4f6;
+            padding: 1em;
+            width: 25em;
+            margin: 0 3em;
+            border-radius: 10px;
+        }
+    }
+    .card {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        padding: 1em 3em;
+        .inner_c {
+            display: flex;
+            align-items: center;
+            padding: 0.5em;
+            span {
+                color: $main_color;
+                font-size: 2.5em;
+                margin-right: 20px;
+            }
+            .text {
+                div {
+                    font-weight: bold;
+                    font-size: 1.1em;
+                }
+                p {
+                    color: $sec_color;
+                }
+            }
+        }
+    }
+}
+.video {
+    background-image: url(../imgs/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: fit-content;
+    padding: $sec_padding;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+        color: white;
+        margin: 10px;
+    }
+    .img {
+        margin: 40px 0;
+        position: relative;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 30em;
+            border-radius: 10px;  
+        }
+        span {
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            outline: 0.3em solid rgba(254, 85, 37, 0.5);
+            color: $main_color;
+            cursor: pointer;
+        }
+    }
+    .boxs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $third_color;
+            width: 15em;
+            border-radius: 10px;
+            margin: 10px 20px;
+            h2 {
+                color: $main_color;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+.deal {
+    padding: $sec_padding;
+    background-color: #f4f4f4;
+    .tit {
+        padding: 0 10em;
+    }
+    .top_menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 10em; 
+        span {
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 0.5em;
+        }
+        button {
+            font-size: 1em;
+            padding: 0.5em 1em;
+            margin: 0 10px;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            width: 8em;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #appartment {
+            background-color: #f35525;
+        }
+        #villahouse {
+            background-color: black;
+        }
+        #penthouse {
+            background-color: black;
+        }
+    }
+    .boxs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+        .details {
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            width: 15em;
+            padding: 1em 2em;
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p {
+                    color: $sec_color;
+                }
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+        img {
+            width: 20em;
+            margin: 0 2em;
+        }
+        .p_con {
+            display: flex;
+            flex-direction: column;
+            p {
+                width: 200px;
+                height: fit-content;
+            }
+        }
+    }
+    #second {
+        display: none;
+    }
+    #third {
+        display: none;
+    }
+}
+@media(max-width: 900px) {
+    #PropertyD {
+        flex-direction: column;
+        align-items: center;
+        .text_c {
+            margin: 1em 0;
+            p {
+                margin: 0;
+            }
+        }
+    }
+    .deal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .top_menu {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+        }
+        .boxs {
+            flex-direction: column;
+            img {
+                margin: 2em 0;
+            }
+            .p_con {
+                text-align: center;
+                p {
+                    margin: 0;
+                }
+                p:nth-child(1) {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+}
+/*end propertyd*/

@@ -1,0 +1,36 @@
+// import variables file
+@use "variables" as *; 
+/*start landing*/
+.landing {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../imgs/landing.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $main_color;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .card {
+        background-color: white;
+        padding: 5px 20px;
+        font-size: 1.2em;
+        span {
+            color: $main_color;
+            font-style: italic;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+    div:nth-child(2) {
+        font-size: 2em;
+        color: white;
+        margin: 20px 0;
+        font-weight: bold;
+    }
+}
+/*end landing*/
